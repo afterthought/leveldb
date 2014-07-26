@@ -14,6 +14,8 @@
     "libs" : ["leveldb"],
     "lflags-windows-x86": ["\"$PACKAGE_DIR\\lib\\win32\\\""],
     "lflags-windows-x86_64": ["\"/libpath:$PACKAGE_DIR\\lib\\win64\""],
+    "lflags-posix.osx": ["\"/libpath:$PACKAGE_DIR\\lib\\osx\""],
     "copyFiles-windows-x86": ["lib/win32/leveldb.dll"],
-    "copyFiles-windows-x86_64": ["lib/win64/leveldb.dll"]
+    "copyFiles-windows-x86_64": ["lib/win64/leveldb.dll"],
+    "copyFiles-posix.osx": ["lib/osx/librocksdb.a"]
 }
